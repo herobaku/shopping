@@ -1,0 +1,23 @@
+:global .swiper-button-prev {
+  top: 50% !important;
+  transform: translateY(40px) !important;
+}
+
+:global .swiper-button-next {
+  top: 50% !important;
+  transform: translateY(40px) !important;
+}
+
+:global .swiper-button-prev:after {
+  font-size: 20px !important;
+  @apply text-[#222]
+}
+
+:global .swiper-button-next:after {
+  font-size: 20px !important;
+  @apply text-[#222]
+}
+
+.title {
+  @apply md:text-3xl text-xl font-bold text-center text-gray-900 mb-6;
+}

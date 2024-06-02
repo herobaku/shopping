@@ -1,0 +1,1719 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Galaxy S21",
+      "brand": "Samsung",
+      "category": "Smartphones",
+      "price": 799.99,
+      "currency": "USD",
+      "stock": 150,
+      "rating": 4.5,
+      "reviews": 250,
+      "images": {
+        "main": "/products/s21.png",
+        "slider": [
+          "https://example.com/images/galaxy_s21_1.jpg",
+          "https://example.com/images/galaxy_s21_2.jpg",
+          "https://example.com/images/galaxy_s21_3.jpg"
+        ]
+      },
+      "features": {
+        "screen_size": "6.2 inch",
+        "battery": "4000mAh",
+        "camera": "64MP",
+        "storage": "128GB",
+        "RAM": "8GB",
+        "processor": "Exynos 2100",
+        "OS": "Android 11"
+      },
+      "description": "A high-performance smartphone with an excellent camera and a bright display."
+    },
+    {
+      "id": "2",
+      "name": "MacBook Air",
+      "brand": "Apple",
+      "category": "Laptops",
+      "price": 999.99,
+      "currency": "USD",
+      "stock": 75,
+      "rating": 4.8,
+      "reviews": 320,
+      "images": {
+        "main": "/products/mac.png",
+        "slider": [
+          "https://example.com/images/macbook_air_1.jpg",
+          "https://example.com/images/macbook_air_2.jpg",
+          "https://example.com/images/macbook_air_3.jpg"
+        ]
+      },
+      "features": {
+        "screen_size": "13.3 inch",
+        "processor": "Apple M1",
+        "RAM": "8GB",
+        "storage": "256GB SSD",
+        "battery_life": "up to 18 hours",
+        "weight": "1.29 kg",
+        "OS": "macOS Big Sur"
+      },
+      "description": "Compact and powerful laptop with long battery life."
+    },
+    {
+      "id": "3",
+      "name": "AirPods Pro Wireless",
+      "brand": "Apple",
+      "category": "Headphones",
+      "price": 249.99,
+      "currency": "USD",
+      "stock": 200,
+      "rating": 4.7,
+      "reviews": 500,
+      "images": {
+        "main": "/products/airpod.png",
+        "slider": [
+          "https://example.com/images/airpods_pro_1.jpg",
+          "https://example.com/images/airpods_pro_2.jpg",
+          "https://example.com/images/airpods_pro_3.jpg"
+        ]
+      },
+      "features": {
+        "noise_cancellation": true,
+        "battery_life": "up to 4.5 hours",
+        "wireless_charging": true,
+        "water_resistant": "IPX4",
+        "connectivity": "Bluetooth 5.0"
+      },
+      "description": "Headphones with active noise cancellation and wireless charging."
+    },
+    {
+      "id": "4",
+      "name": "Galaxy Watch 4",
+      "brand": "Samsung",
+      "category": "Smartwatch",
+      "price": 299.99,
+      "currency": "USD",
+      "stock": 50,
+      "rating": 4.6,
+      "reviews": 180,
+      "images": {
+        "main": "/products/watch.jpeg",
+        "slider": [
+          "https://example.com/images/galaxy_watch_4_1.jpg",
+          "https://example.com/images/galaxy_watch_4_2.jpg",
+          "https://example.com/images/galaxy_watch_4_3.jpg"
+        ]
+      },
+      "features": {
+        "screen_size": "1.4 inch",
+        "battery_life": "up to 40 hours",
+        "water_resistant": "5ATM",
+        "GPS": true,
+        "connectivity": "Bluetooth 5.0, Wi-Fi",
+        "OS": "Wear OS"
+      },
+      "description": "Stylish smartwatch with long working hours and GPS support."
+    },
+    {
+      "id": "5",
+      "name": "PlayStation 5 Pro",
+      "brand": "Sony",
+      "category": "Console",
+      "price": 499.99,
+      "currency": "USD",
+      "stock": 0,
+      "rating": 4.9,
+      "reviews": 400,
+      "images": {
+        "main": "/products/ps5.webp",
+        "slider": [
+          "https://example.com/images/ps5_1.jpg",
+          "https://example.com/images/ps5_2.jpg",
+          "https://example.com/images/ps5_3.jpg"
+        ]
+      },
+      "features": {
+        "storage": "825GB SSD",
+        "resolution": "up to 8K",
+        "ray_tracing": true,
+        "backward_compatibility": true,
+        "controllers": "DualSense"
+      },
+      "description": "The latest game console with support for high resolutions and technologies."
+    },
+    {
+      "id": "6",
+      "name": "iPhone 13",
+      "brand": "Apple",
+      "category": "Smartphones",
+      "price": 899.99,
+      "currency": "USD",
+      "stock": 200,
+      "rating": 4.8,
+      "reviews": 350,
+      "images": {
+        "main": "/products/13.jpg",
+        "slider": [
+          "https://example.com/images/iphone_13_1.jpg",
+          "https://example.com/images/iphone_13_2.jpg",
+          "https://example.com/images/iphone_13_3.jpg"
+        ]
+      },
+      "features": {
+        "screen_size": "6.1 inch",
+        "battery": "3240mAh",
+        "camera": "12MP",
+        "storage": "128GB",
+        "RAM": "4GB",
+        "processor": "A15 Bionic",
+        "OS": "iOS 15"
+      },
+      "description": "A modern smartphone with a powerful processor and an improved camera."
+    },
+    {
+      "id": "7",
+      "name": "iPad Pro 12.9",
+      "brand": "Apple",
+      "category": "Tablets",
+      "price": 1099.99,
+      "currency": "USD",
+      "stock": 60,
+      "rating": 4.9,
+      "reviews": 220,
+      "images": {
+        "main": "/products/ipad12.jpg",
+        "slider": [
+          "https://example.com/images/ipad_pro_12_9_1.jpg",
+          "https://example.com/images/ipad_pro_12_9_2.jpg",
+          "https://example.com/images/ipad_pro_12_9_3.jpg"
+        ]
+      },
+      "features": {
+        "screen_size": "12.9 inch",
+        "battery_life": "up to 10 hours",
+        "storage": "256GB",
+        "RAM": "8GB",
+        "processor": "Apple M1",
+        "OS": "iPadOS 14"
+      },
+      "description": "A tablet with a large screen and a powerful processor for professional use."
+    },
+    {
+      "id": "8",
+      "name": "Dell XPS 13",
+      "brand": "Dell",
+      "category": "Laptops",
+      "price": 1199.99,
+      "currency": "USD",
+      "stock": 45,
+      "rating": 4.7,
+      "reviews": 270,
+      "images": {
+        "main": "/products/dell.jpg",
+        "slider": [
+          "https://example.com/images/dell_xps_13_1.jpg",
+          "https://example.com/images/dell_xps_13_2.jpg",
+          "https://example.com/images/dell_xps_13_3.jpg"
+        ]
+      },
+      "features": {
+        "screen_size": "13.4 inch",
+        "processor": "Intel Core i7",
+        "RAM": "16GB",
+        "storage": "512GB SSD",
+        "battery_life": "up to 12 hours",
+        "weight": "1.2 kg",
+        "OS": "Windows 10"
+      },
+      "description": "An ultrabook with powerful features and long battery life."
+    },
+    {
+      "id": "9",
+      "name": "Fitbit Charge 5",
+      "brand": "Fitbit",
+      "category": "Fitness trackers",
+      "price": 149.99,
+      "currency": "USD",
+      "stock": 120,
+      "rating": 4.4,
+      "reviews": 180,
+      "images": {
+        "main": "/products/fitbit.jpg",
+        "slider": [
+          "https://example.com/images/fitbit_charge_5_1.jpg",
+          "https://example.com/images/fitbit_charge_5_2.jpg",
+          "https://example.com/images/fitbit_charge_5_3.jpg"
+        ]
+      },
+      "features": {
+        "screen_size": "1.04 inch",
+        "battery_life": "up to 7 days",
+        "water_resistant": "50 meters",
+        "heart_rate_monitor": true,
+        "GPS": true
+      },
+      "description": "Advanced fitness tracker with GPS and heart rate monitoring."
+    },
+    {
+      "id": "10",
+      "name": "Canon EOS R5 digital",
+      "brand": "Canon",
+      "category": "Cameras",
+      "price": 3899.99,
+      "currency": "USD",
+      "stock": 20,
+      "rating": 4.9,
+      "reviews": 130,
+      "images": {
+        "main": "/products/canon.jpg",
+        "slider": [
+          "https://example.com/images/canon_eos_r5_1.jpg",
+          "https://example.com/images/canon_eos_r5_2.jpg",
+          "https://example.com/images/canon_eos_r5_3.jpg"
+        ]
+      },
+      "features": {
+        "sensor": "45MP Full-Frame",
+        "video_resolution": "8K",
+        "image_stabilization": true,
+        "ISO": "100-51200",
+        "connectivity": "Wi-Fi, Bluetooth"
+      },
+      "description": "Professional camera with 8K video support and high resolution for photos."
+    },
+    {
+      "id": "11",
+      "name": "Google Pixel 6",
+      "brand": "Google",
+      "category": "Smartphones",
+      "price": 699.99,
+      "currency": "USD",
+      "stock": 180,
+      "rating": 4.5,
+      "reviews": 210,
+      "images": {
+        "main": "/products/pixel.jpg",
+        "slider": [
+          "https://example.com/images/google_pixel_6_1.jpg",
+          "https://example.com/images/google_pixel_6_2.jpg",
+          "https://example.com/images/google_pixel_6_3.jpg"
+        ]
+      },
+      "features": {
+        "screen_size": "6.4 inch",
+        "battery": "4614mAh",
+        "camera": "50MP",
+        "storage": "128GB",
+        "RAM": "8GB",
+        "processor": "Google Tensor",
+        "OS": "Android 12"
+      },
+      "description": "A powerful smartphone from Google with an advanced camera and a new processor."
+    },
+    {
+      "id": "12",
+      "name": "ASUS ROG Zephyrus G14 gaming",
+      "brand": "ASUS",
+      "category": "Laptops",
+      "price": 1499.99,
+      "currency": "USD",
+      "stock": 35,
+      "rating": 4.8,
+      "reviews": 150,
+      "images": {
+        "main": "/products/asus.jpg",
+        "slider": [
+          "https://example.com/images/asus_rog_zephyrus_g14_1.jpg",
+          "https://example.com/images/asus_rog_zephyrus_g14_2.jpg",
+          "https://example.com/images/asus_rog_zephyrus_g14_3.jpg"
+        ]
+      },
+      "features": {
+        "screen_size": "14 inch",
+        "processor": "AMD Ryzen 9",
+        "RAM": "16GB",
+        "storage": "1TB SSD",
+        "graphics": "NVIDIA GeForce RTX 3060",
+        "battery_life": "up to 10 hours",
+        "OS": "Windows 10"
+      },
+      "description": "A powerful gaming laptop with excellent performance and a bright screen."
+    },
+    {
+      "id": "13",
+      "name": "Apple Watch Series 7",
+      "brand": "Apple",
+      "category": "Smartwatch",
+      "price": 399.99,
+      "currency": "USD",
+      "stock": 90,
+      "rating": 4.7,
+      "reviews": 300,
+      "images": {
+        "main": "/products//Apple Watch Series.webp",
+        "slider": [
+          "https://example.com/images/apple_watch_series_7_1.jpg",
+          "https://example.com/images/apple_watch_series_7_2.jpg",
+          "https://example.com/images/apple_watch_series_7_3.jpg"
+        ]
+      },
+      "features": {
+        "screen_size": "1.8 inch",
+        "battery_life": "up to 18 hours",
+        "water_resistant": "50 meters",
+        "heart_rate_monitor": true,
+        "GPS": true,
+        "OS": "watchOS 8"
+      },
+      "description": "An advanced smartwatch with support for health and fitness monitoring."
+    },
+    {
+      "id": "14",
+      "name": "OnePlus 9",
+      "brand": "OnePlus",
+      "category": "Smartphones",
+      "price": 729.99,
+      "currency": "USD",
+      "stock": 160,
+      "rating": 4.6,
+      "reviews": 190,
+      "images": {
+        "main": "/products/oneplus.png",
+        "slider": [
+          "https://example.com/images/oneplus_9_1.jpg",
+          "https://example.com/images/oneplus_9_2.jpg",
+          "https://example.com/images/oneplus_9_3.jpg"
+        ]
+      },
+      "features": {
+        "screen_size": "6.55 inch",
+        "battery": "4500mAh",
+        "camera": "48MP",
+        "storage": "128GB",
+        "RAM": "8GB",
+        "processor": "Snapdragon 888",
+        "OS": "Android 11"
+      },
+      "description": "A powerful smartphone with fast charging and excellent performance."
+    },
+    {
+      "id": "15",
+      "name": "Xbox Series X",
+      "brand": "Microsoft",
+      "category": "Console",
+      "price": 499.99,
+      "currency": "USD",
+      "stock": 40,
+      "rating": 4.8,
+      "reviews": 320,
+      "images": {
+        "main": "/products/xbox.png",
+        "slider": [
+          "https://example.com/images/xbox_series_x_1.jpg",
+          "https://example.com/images/xbox_series_x_2.jpg",
+          "https://example.com/images/xbox_series_x_3.jpg"
+        ]
+      },
+      "features": {
+        "storage": "1TB SSD",
+        "resolution": "up to 8K",
+        "ray_tracing": true,
+        "backward_compatibility": true,
+        "controllers": "Xbox Wireless Controller"
+      },
+      "description": "A powerful game console with support for 8K resolution and new technologies."
+    },
+    {
+      "id": "16",
+      "name": "Garmin Vivosmart 4",
+      "brand": "Garmin",
+      "category": "Fitness trackers",
+      "price": 129.99,
+      "currency": "USD",
+      "stock": 110,
+      "rating": 4.4,
+      "reviews": 170,
+      "images": {
+        "main": "/products/garmin.jpeg",
+        "slider": [
+          "https://example.com/images/garmin_vivosmart_4_1.jpg",
+          "https://example.com/images/garmin_vivosmart_4_2.jpg",
+          "https://example.com/images/garmin_vivosmart_4_3.jpg"
+        ]
+      },
+      "features": {
+        "screen_size": "0.75 inch",
+        "battery_life": "up to 7 days",
+        "water_resistant": "50 meters",
+        "heart_rate_monitor": true,
+        "GPS": false
+      },
+      "description": "Compact fitness tracker with health monitoring and long working time."
+    },
+    {
+      "id": "17",
+      "name": "HP Spectre x360",
+      "brand": "HP",
+      "category": "Laptops",
+      "price": 1299.99,
+      "currency": "USD",
+      "stock": 40,
+      "rating": 4.6,
+      "reviews": 250,
+      "images": {
+        "main": "/products/spectre.jpg",
+        "slider": [
+          "https://example.com/images/hp_spectre_x360_1.jpg",
+          "https://example.com/images/hp_spectre_x360_2.jpg",
+          "https://example.com/images/hp_spectre_x360_3.jpg"
+        ]
+      },
+      "features": {
+        "screen_size": "13.3 inch",
+        "processor": "Intel Core i7",
+        "RAM": "16GB",
+        "storage": "512GB SSD",
+        "battery_life": "up to 12 hours",
+        "weight": "1.32 kg",
+        "OS": "Windows 10"
+      },
+      "description": "Stylish and powerful ultrabook with touch screen and long working time."
+    },
+    {
+      "id": "18",
+      "name": "Sony Alpha a7 III Digital",
+      "brand": "Sony",
+      "category": "Cameras",
+      "price": 1999.99,
+      "currency": "USD",
+      "stock": 25,
+      "rating": 4.8,
+      "reviews": 160,
+      "images": {
+        "main": "/products/sony.jpg",
+        "slider": [
+          "https://example.com/images/sony_alpha_a7_iii_1.jpg",
+          "https://example.com/images/sony_alpha_a7_iii_2.jpg",
+          "https://example.com/images/sony_alpha_a7_iii_3.jpg"
+        ]
+      },
+      "features": {
+        "sensor": "24.2MP Full-Frame",
+        "video_resolution": "4K",
+        "image_stabilization": true,
+        "ISO": "100-51200",
+        "connectivity": "Wi-Fi, Bluetooth"
+      },
+      "description": "Professional camera with high quality photos and videos for enthusiasts and professionals."
+    },
+    {
+      "id": "19",
+      "name": "Samsung Galaxy Tab S7",
+      "brand": "Samsung",
+      "category": "Tablets",
+      "price": 649.99,
+      "currency": "USD",
+      "stock": 80,
+      "rating": 4.7,
+      "reviews": 220,
+      "images": {
+        "main": "/products/s7 tab.jpeg",
+        "slider": [
+          "https://example.com/images/galaxy_tab_s7_1.jpg",
+          "https://example.com/images/galaxy_tab_s7_2.jpg",
+          "https://example.com/images/galaxy_tab_s7_3.jpg"
+        ]
+      },
+      "features": {
+        "screen_size": "11 inch",
+        "battery_life": "up to 15 hours",
+        "storage": "128GB",
+        "RAM": "6GB",
+        "processor": "Snapdragon 865+",
+        "OS": "Android 10"
+      },
+      "description": "A powerful tablet with a bright screen and long battery life."
+    },
+    {
+      "id": "20",
+      "name": "Huawei Watch GT 2",
+      "brand": "Huawei",
+      "category": "Smartwatch",
+      "price": 179.99,
+      "currency": "USD",
+      "stock": 130,
+      "rating": 4.5,
+      "reviews": 210,
+      "images": {
+        "main": "/products/huawei.webp",
+        "slider": [
+          "https://example.com/images/huawei_watch_gt_2_1.jpg",
+          "https://example.com/images/huawei_watch_gt_2_2.jpg",
+          "https://example.com/images/huawei_watch_gt_2_3.jpg"
+        ]
+      },
+      "features": {
+        "screen_size": "1.39 inch",
+        "battery_life": "up to 14 days",
+        "water_resistant": "50 meters",
+        "heart_rate_monitor": true,
+        "GPS": true,
+        "OS": "LiteOS"
+      },
+      "description": "A smartwatch with a long working time and a health monitoring function."
+    },
+    {
+      "id": "21",
+      "name": "LG UltraGear 27GL850 gaming",
+      "brand": "LG",
+      "category": "Monitors",
+      "price": 399.99,
+      "currency": "USD",
+      "stock": 70,
+      "rating": 4.7,
+      "reviews": 190,
+      "images": {
+        "main": "/products/lg.jpg",
+        "slider": [
+          "https://example.com/images/lg_ultragear_27gl850_1.jpg",
+          "https://example.com/images/lg_ultragear_27gl850_2.jpg",
+          "https://example.com/images/lg_ultragear_27gl850_3.jpg"
+        ]
+      },
+      "features": {
+        "screen_size": "27 inch",
+        "resolution": "2560x1440",
+        "refresh_rate": "144Hz",
+        "response_time": "1ms",
+        "connectivity": "HDMI, DisplayPort"
+      },
+      "description": "High resolution gaming monitor with fast refresh rate."
+    },
+    {
+      "id": "22",
+      "name": "Xiaomi Mi 11",
+      "brand": "Xiaomi",
+      "category": "Smartphones",
+      "price": 749.99,
+      "currency": "USD",
+      "stock": 150,
+      "rating": 4.6,
+      "reviews": 230,
+      "images": {
+        "main": "/products/xiaomi.jpeg",
+        "slider": [
+          "https://example.com/images/xiaomi_mi_11_1.jpg",
+          "https://example.com/images/xiaomi_mi_11_2.jpg",
+          "https://example.com/images/xiaomi_mi_11_3.jpg"
+        ]
+      },
+      "features": {
+        "screen_size": "6.81 inch",
+        "battery": "4600mAh",
+        "camera": "108MP",
+        "storage": "128GB",
+        "RAM": "8GB",
+        "processor": "Snapdragon 888",
+        "OS": "Android 11"
+      },
+      "description": "A smartphone with an excellent camera and performance at an affordable price."
+    },
+    {
+      "id": "23",
+      "name": "Lenovo ThinkPad X1 Carbon",
+      "brand": "Lenovo",
+      "category": "Laptops",
+      "price": 1399.99,
+      "currency": "USD",
+      "stock": 50,
+      "rating": 4.8,
+      "reviews": 200,
+      "images": {
+        "main": "/products/lenovo.jpg",
+        "slider": [
+          "https://example.com/images/lenovo_thinkpad_x1_carbon_1.jpg",
+          "https://example.com/images/lenovo_thinkpad_x1_carbon_2.jpg",
+          "https://example.com/images/lenovo_thinkpad_x1_carbon_3.jpg"
+        ]
+      },
+      "features": {
+        "screen_size": "14 inch",
+        "processor": "Intel Core i7",
+        "RAM": "16GB",
+        "storage": "512GB SSD",
+        "battery_life": "up to 15 hours",
+        "weight": "1.09 kg",
+        "OS": "Windows 10"
+      },
+      "description": "A business laptop with high performance and long battery life."
+    },
+    {
+      "id": "24",
+      "name": "Sony WH-1000XM4",
+      "brand": "Sony",
+      "category": "Headphones",
+      "price": 349.99,
+      "currency": "USD",
+      "stock": 110,
+      "rating": 4.9,
+      "reviews": 310,
+      "images": {
+        "main": "/products/sony.webp",
+        "slider": [
+          "https://example.com/images/sony_wh_1000xm4_1.jpg",
+          "https://example.com/images/sony_wh_1000xm4_2.jpg",
+          "https://example.com/images/sony_wh_1000xm4_3.jpg"
+        ]
+      },
+      "features": {
+        "noise_cancellation": true,
+        "battery_life": "up to 30 hours",
+        "wireless_charging": false,
+        "water_resistant": "No",
+        "connectivity": "Bluetooth, AUX"
+      },
+      "description": "Noise canceling headphones with long battery life."
+    },
+    {
+      "id": "25",
+      "name": "Kindle Paperwhite",
+      "brand": "Amazon",
+      "category": "E-books",
+      "price": 129.99,
+      "currency": "USD",
+      "stock": 200,
+      "rating": 4.8,
+      "reviews": 320,
+      "images": {
+        "main": "/products/amazon.jpg",
+        "slider": [
+          "https://example.com/images/kindle_paperwhite_1.jpg",
+          "https://example.com/images/kindle_paperwhite_2.jpg",
+          "https://example.com/images/kindle_paperwhite_3.jpg"
+        ]
+      },
+      "features": {
+        "screen_size": "6 inch",
+        "storage": "8GB",
+        "battery_life": "up to 6 weeks",
+        "water_resistant": true,
+        "connectivity": "Wi-Fi"
+      },
+      "description": "An e-book with a bright screen and long battery life on a single charge."
+    },
+    {
+      "id": "26",
+      "name": "Xiaomi Mi Band 6",
+      "brand": "Xiaomi",
+      "category": "Fitness trackers",
+      "price": 49.99,
+      "currency": "USD",
+      "stock": 300,
+      "rating": 4.6,
+      "reviews": 260,
+      "images": {
+        "main": "/products/xiaomi_mi_band.jpg",
+        "slider": [
+          "https://example.com/images/xiaomi_mi_band_6_1.jpg",
+          "https://example.com/images/xiaomi_mi_band_6_2.jpg",
+          "https://example.com/images/xiaomi_mi_band_6_3.jpg"
+        ]
+      },
+      "features": {
+        "screen_size": "1.56 inch",
+        "battery_life": "up to 14 days",
+        "water_resistant": "50 meters",
+        "heart_rate_monitor": true,
+        "GPS": false
+      },
+      "description": "An affordable fitness tracker with health and fitness monitoring."
+    },
+    {
+      "id": "27",
+      "name": "Samsung Galaxy Watch 4",
+      "brand": "Samsung",
+      "category": "Smartwatch",
+      "price": 249.99,
+      "currency": "USD",
+      "stock": 100,
+      "rating": 4.5,
+      "reviews": 200,
+      "images": {
+        "main": "/products/watch4.jpg",
+        "slider": [
+          "https://example.com/images/galaxy_watch_4_1.jpg",
+          "https://example.com/images/galaxy_watch_4_2.jpg",
+          "https://example.com/images/galaxy_watch_4_3.jpg"
+        ]
+      },
+      "features": {
+        "screen_size": "1.36 inch",
+        "battery_life": "up to 40 hours",
+        "water_resistant": "50 meters",
+        "heart_rate_monitor": true,
+        "GPS": true,
+        "OS": "Wear OS"
+      },
+      "description": "A smartwatch with multiple functions for health and fitness monitoring."
+    },
+    {
+      "id": "28",
+      "name": "PlayStation 5",
+      "brand": "Sony",
+      "category": "Console",
+      "price": 499.99,
+      "currency": "USD",
+      "stock": 60,
+      "rating": 4.9,
+      "reviews": 500,
+      "images": {
+        "main": "/products/ps5.webp",
+        "slider": [
+          "https://example.com/images/playstation_5_1.jpg",
+          "https://example.com/images/playstation_5_2.jpg",
+          "https://example.com/images/playstation_5_3.jpg"
+        ]
+      },
+      "features": {
+        "storage": "825GB SSD",
+        "resolution": "up to 8K",
+        "ray_tracing": true,
+        "backward_compatibility": true,
+        "controllers": "DualSense Wireless Controller"
+      },
+      "description": "The latest gaming console with advanced technology and support for 8K resolution."
+    },
+    {
+      "id": "29",
+      "name": "Dell XPS 13",
+      "brand": "Dell",
+      "category": "Laptops",
+      "price": 1199.99,
+      "currency": "USD",
+      "stock": 45,
+      "rating": 4.7,
+      "reviews": 270,
+      "images": {
+        "main": "/products/dellxps.JPG",
+        "slider": [
+          "https://example.com/images/dell_xps_13_1.jpg",
+          "https://example.com/images/dell_xps_13_2.jpg",
+          "https://example.com/images/dell_xps_13_3.jpg"
+        ]
+      },
+      "features": {
+        "screen_size": "13.4 inch",
+        "processor": "Intel Core i7",
+        "RAM": "16GB",
+        "storage": "512GB SSD",
+        "battery_life": "up to 14 hours",
+        "weight": "1.2 kg",
+        "OS": "Windows 10"
+      },
+      "description": "Compact and powerful laptop with high resolution and long battery life."
+    },
+    {
+      "id": "30",
+      "name": "Bose QuietComfort 35 II Wireless",
+      "brand": "Bose",
+      "category": "Headphones",
+      "price": 299.99,
+      "currency": "USD",
+      "stock": 100,
+      "rating": 4.8,
+      "reviews": 290,
+      "images": {
+        "main": "/products/bose.jpg",
+        "slider": [
+          "https://example.com/images/bose_qc35_ii_1.jpg",
+          "https://example.com/images/bose_qc35_ii_2.jpg",
+          "https://example.com/images/bose_qc35_ii_3.jpg"
+        ]
+      },
+      "features": {
+        "noise_cancellation": true,
+        "battery_life": "up to 20 hours",
+        "wireless_charging": false,
+        "water_resistant": "No",
+        "connectivity": "Bluetooth, AUX"
+      },
+      "description": "Wireless headphones with noise reduction and high sound quality."
+    }
+  ],
+  "contact": [
+    {
+      "name": "asdas",
+      "email": "emin@loc.loc",
+      "address": "",
+      "phone": "",
+      "subject": "",
+      "message": "sa",
+      "id": 1
+    },
+    {
+      "name": "asdas",
+      "email": "eminmm@ya.ru",
+      "address": "",
+      "phone": "",
+      "subject": "",
+      "message": "asd",
+      "id": 2
+    }
+  ],
+  "blog": [
+    {
+      "id": "1",
+      "poster": "/blog/8-540x300.jpg",
+      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus.",
+      "date": "May 09, 2024",
+      "views": 1775,
+      "images": [
+        "https://example.com/images/blog_1.jpg",
+        "https://example.com/images/blog_2.jpg",
+        "https://example.com/images/blog_3.jpg"
+      ],
+      "tags": [
+        "tag1",
+        "tag2",
+        "tag3"
+      ],
+      "category": [
+        "electronic",
+        "ecommerce"
+      ],
+      "author": {
+        "name": "John Doe",
+        "bio": "John Doe is a tech enthusiast and freelance writer passionate about exploring the latest trends in electronic commerce."
+      }
+    },
+    {
+      "id": "2",
+      "poster": "/blog/9-540x300.jpg",
+      "title": "The Impact of Artificial Intelligence on E-commerce",
+      "description": "Artificial intelligence (AI) is revolutionizing the e-commerce industry, from personalized recommendations to automated customer service.",
+      "date": "April 25, 2024",
+      "views": 2345,
+      "images": [
+        "https://example.com/images/blog_2_1.jpg",
+        "https://example.com/images/blog_2_2.jpg",
+        "https://example.com/images/blog_2_3.jpg"
+      ],
+      "tags": [
+        "AI",
+        "e-commerce",
+        "technology"
+      ],
+      "category": [
+        "technology",
+        "ecommerce"
+      ],
+      "author": {
+        "name": "Emily Smith",
+        "bio": "Emily Smith is a technology writer specializing in artificial intelligence and its applications in various industries."
+      }
+    },
+    {
+      "id": "3",
+      "poster": "/blog/10-540x300.jpg",
+      "title": "10 Must-Have Gadgets for Tech Enthusiasts",
+      "description": "Discover the latest and coolest gadgets every tech enthusiast should own, from smart home devices to wearable tech.",
+      "date": "June 15, 2024",
+      "views": 3221,
+      "images": [
+        "https://example.com/images/blog_3_1.jpg",
+        "https://example.com/images/blog_3_2.jpg",
+        "https://example.com/images/blog_3_3.jpg"
+      ],
+      "tags": [
+        "gadgets",
+        "technology",
+        "smart devices"
+      ],
+      "category": [
+        "technology"
+      ],
+      "author": {
+        "name": "Mark Johnson",
+        "bio": "Mark Johnson is a technology blogger who loves exploring and reviewing the latest gadgets on the market."
+      }
+    },
+    {
+      "id": "4",
+      "poster": "/blog/8-540x300.jpg",
+      "title": "The Future of Online Retail: Trends and Predictions",
+      "description": "Explore the emerging trends and future predictions shaping the landscape of online retail, from AR shopping experiences to sustainable e-commerce practices.",
+      "date": "July 30, 2024",
+      "views": 1678,
+      "images": [
+        "https://example.com/images/blog_4_1.jpg",
+        "https://example.com/images/blog_4_2.jpg",
+        "https://example.com/images/blog_4_3.jpg"
+      ],
+      "tags": [
+        "online retail",
+        "future trends",
+        "AR",
+        "sustainability"
+      ],
+      "category": [
+        "ecommerce",
+        "technology"
+      ],
+      "author": {
+        "name": "Sophia Brown",
+        "bio": "Sophia Brown is an e-commerce strategist and futurist, passionate about envisioning the future of retail."
+      }
+    },
+    {
+      "id": "5",
+      "poster": "/blog/9-540x300.jpg",
+      "title": "Mastering Digital Marketing: Strategies for E-commerce Success",
+      "description": "Learn essential digital marketing strategies tailored for e-commerce businesses to boost sales, engage customers, and build brand loyalty.",
+      "date": "September 12, 2024",
+      "views": 2897,
+      "images": [
+        "https://example.com/images/blog_5_1.jpg",
+        "https://example.com/images/blog_5_2.jpg",
+        "https://example.com/images/blog_5_3.jpg"
+      ],
+      "tags": [
+        "digital marketing",
+        "e-commerce",
+        "branding"
+      ],
+      "category": [
+        "ecommerce",
+        "marketing"
+      ],
+      "author": {
+        "name": "Michael Lee",
+        "bio": "Michael Lee is a digital marketing expert with a focus on helping e-commerce businesses thrive in the online marketplace."
+      }
+    },
+    {
+      "id": "6",
+      "poster": "/blog/10-540x300.jpg",
+      "title": "The Rise of Social Commerce: Leveraging Social Media for Sales",
+      "description": "Discover how social commerce is reshaping the way businesses sell online and learn effective strategies to harness the power of social media platforms for increased sales.",
+      "date": "October 20, 2024",
+      "views": 2005,
+      "images": [
+        "https://example.com/images/blog_6_1.jpg",
+        "https://example.com/images/blog_6_2.jpg",
+        "https://example.com/images/blog_6_3.jpg"
+      ],
+      "tags": [
+        "social commerce",
+        "social media",
+        "sales strategies"
+      ],
+      "category": [
+        "ecommerce",
+        "marketing"
+      ],
+      "author": {
+        "name": "Jessica Taylor",
+        "bio": "Jessica Taylor is a social media strategist specializing in helping businesses leverage social platforms for sales and brand growth."
+      }
+    }
+  ],
+  "wishlist": [],
+  "basket": [],
+  "users": [
+    {
+      "email": "eminmm@mm.com",
+      "password": "$2a$10$BdOicYj4z72UHum461riN.N2EOgA8rJOyL5EXaajNK4TQLfzfFKQW",
+      "username": "eminmm",
+      "confirmPassword": "OperaHero1991",
+      "orders": [
+        {
+          "product": [
+            {
+              "id": "1",
+              "name": "Galaxy S21",
+              "image": "/products/s21.png",
+              "count": 3,
+              "price": 799.99,
+              "currency": "USD"
+            }
+          ],
+          "price": "2399.97"
+        },
+        {
+          "product": [
+            {
+              "id": "3",
+              "name": "AirPods Pro Wireless",
+              "image": "/products/airpod.png",
+              "count": 1,
+              "price": 249.99,
+              "currency": "USD"
+            }
+          ],
+          "price": "249.99"
+        },
+        {
+          "product": [
+            {
+              "id": "2",
+              "name": "MacBook Air",
+              "image": "/products/mac.png",
+              "count": 1,
+              "price": 999.99,
+              "currency": "USD"
+            }
+          ],
+          "price": "999.99"
+        },
+        {
+          "product": [
+            {
+              "id": "9",
+              "name": "Fitbit Charge 5",
+              "image": "/products/fitbit.jpg",
+              "count": 2,
+              "price": 149.99,
+              "currency": "USD"
+            }
+          ],
+          "price": "299.98"
+        },
+        {
+          "product": [
+            {
+              "id": "29",
+              "name": "Dell XPS 13",
+              "image": "/products/dellxps.JPG",
+              "count": 3,
+              "price": 1199.99,
+              "currency": "USD"
+            }
+          ],
+          "price": "3599.97"
+        }
+      ],
+      "id": 1,
+      "date": "2024-05-30T01:31:01.299Z"
+    }
+  ],
+  "login": [],
+  "tickets": [
+    {
+      "id": 1,
+      "title": "Emin",
+      "sum": 5,
+      "count": 10
+    }
+  ],
+  "orders": [
+    {
+      "name": "Emin",
+      "email": "eminmm@mm.com",
+      "phone": "1212",
+      "country": "AZ",
+      "state": "asd",
+      "city": "asd",
+      "address": "asd",
+      "card number": "112",
+      "CVC": "12",
+      "month": "12",
+      "day": "12",
+      "product": [
+        {
+          "id": "1",
+          "name": "Galaxy S21",
+          "image": "/products/s21.png",
+          "count": 3,
+          "price": 799.99,
+          "currency": "USD"
+        }
+      ],
+      "totalPrice": "2399.97",
+      "user": {
+        "email": "eminmm@mm.com",
+        "username": "eminmm",
+        "confirmPassword": "OperaHero1991",
+        "orders": [],
+        "id": 1
+      },
+      "date": "2024-05-30T01:09:23.373Z",
+      "id": 1
+    },
+    {
+      "name": "Emin",
+      "email": "eminmm@mm.com",
+      "phone": "12",
+      "country": "12",
+      "state": "12",
+      "city": "12",
+      "address": "12",
+      "card number": "12",
+      "CVC": "12",
+      "month": "12",
+      "day": "12",
+      "product": [
+        {
+          "id": "1",
+          "name": "Galaxy S21",
+          "image": "/products/s21.png",
+          "count": 3,
+          "price": 799.99,
+          "currency": "USD"
+        }
+      ],
+      "totalPrice": "2399.97",
+      "user": {
+        "email": "eminmm@mm.com",
+        "username": "eminmm",
+        "confirmPassword": "OperaHero1991",
+        "orders": [],
+        "id": 1
+      },
+      "date": "2024-05-30T01:10:23.008Z",
+      "id": 2
+    },
+    {
+      "name": "Emin",
+      "email": "eminmm@mm.com",
+      "phone": "5555",
+      "country": "asd",
+      "state": "sad",
+      "city": "asd",
+      "address": "asd",
+      "card number": "213",
+      "CVC": "123",
+      "month": "2",
+      "day": "3",
+      "product": [
+        {
+          "id": "6",
+          "name": "iPhone 13",
+          "image": "/products/13.jpg",
+          "count": 1,
+          "price": 899.99,
+          "currency": "USD"
+        }
+      ],
+      "totalPrice": "899.99",
+      "user": {
+        "email": "eminmm@mm.com",
+        "username": "eminmm",
+        "confirmPassword": "OperaHero1991",
+        "orders": [
+          {
+            "product": [
+              {
+                "id": "1",
+                "name": "Galaxy S21",
+                "image": "/products/s21.png",
+                "count": 3,
+                "price": 799.99,
+                "currency": "USD"
+              }
+            ],
+            "price": "2399.97"
+          }
+        ],
+        "id": 1,
+        "date": "2024-05-30T01:10:23.027Z"
+      },
+      "date": "2024-05-30T01:14:59.625Z",
+      "id": 3
+    },
+    {
+      "name": "Emin",
+      "email": "eminmm@mm.com",
+      "phone": "12",
+      "country": "12",
+      "state": "12",
+      "city": "12",
+      "address": "12",
+      "card number": "12",
+      "CVC": "12",
+      "month": "12",
+      "day": "12",
+      "product": [
+        {
+          "id": "4",
+          "name": "Galaxy Watch 4",
+          "image": "/products/watch.jpeg",
+          "count": 4,
+          "price": 299.99,
+          "currency": "USD"
+        }
+      ],
+      "totalPrice": "1199.96",
+      "user": {
+        "email": "eminmm@mm.com",
+        "username": "eminmm",
+        "confirmPassword": "OperaHero1991",
+        "orders": [
+          {
+            "product": [
+              {
+                "id": "1",
+                "name": "Galaxy S21",
+                "image": "/products/s21.png",
+                "count": 3,
+                "price": 799.99,
+                "currency": "USD"
+              }
+            ],
+            "price": "2399.97"
+          }
+        ],
+        "id": 1,
+        "date": "2024-05-30T01:10:23.027Z"
+      },
+      "date": "2024-05-30T01:15:42.273Z",
+      "id": 4
+    },
+    {
+      "name": "Emin",
+      "email": "eminmm@mm.com",
+      "phone": "1212",
+      "country": "1212",
+      "state": "12",
+      "city": "12",
+      "address": "12",
+      "card number": "12",
+      "CVC": "12",
+      "month": "12",
+      "day": "12",
+      "product": [
+        {
+          "id": "3",
+          "name": "AirPods Pro Wireless",
+          "image": "/products/airpod.png",
+          "count": 1,
+          "price": 249.99,
+          "currency": "USD"
+        }
+      ],
+      "totalPrice": "249.99",
+      "user": {
+        "email": "eminmm@mm.com",
+        "username": "eminmm",
+        "confirmPassword": "OperaHero1991",
+        "orders": [
+          {
+            "product": [
+              {
+                "id": "1",
+                "name": "Galaxy S21",
+                "image": "/products/s21.png",
+                "count": 3,
+                "price": 799.99,
+                "currency": "USD"
+              }
+            ],
+            "price": "2399.97"
+          }
+        ],
+        "id": 1,
+        "date": "2024-05-30T01:10:23.027Z"
+      },
+      "date": "2024-05-30T01:19:52.281Z",
+      "id": 5
+    },
+    {
+      "name": "Emin",
+      "email": "eminmm@mm.com",
+      "phone": "12",
+      "country": "12",
+      "state": "12",
+      "city": "12",
+      "address": "12",
+      "card number": "12",
+      "CVC": "12",
+      "month": "12",
+      "day": "12",
+      "product": [
+        {
+          "id": "2",
+          "name": "MacBook Air",
+          "image": "/products/mac.png",
+          "count": 1,
+          "price": 999.99,
+          "currency": "USD"
+        }
+      ],
+      "totalPrice": "999.99",
+      "user": {
+        "email": "eminmm@mm.com",
+        "username": "eminmm",
+        "confirmPassword": "OperaHero1991",
+        "orders": [
+          {
+            "product": [
+              {
+                "id": "1",
+                "name": "Galaxy S21",
+                "image": "/products/s21.png",
+                "count": 3,
+                "price": 799.99,
+                "currency": "USD"
+              }
+            ],
+            "price": "2399.97"
+          },
+          {
+            "product": [
+              {
+                "id": "3",
+                "name": "AirPods Pro Wireless",
+                "image": "/products/airpod.png",
+                "count": 1,
+                "price": 249.99,
+                "currency": "USD"
+              }
+            ],
+            "price": "249.99"
+          }
+        ],
+        "id": 1,
+        "date": "2024-05-30T01:19:52.312Z"
+      },
+      "date": "2024-05-30T01:22:14.401Z",
+      "id": 6
+    },
+    {
+      "name": "Emin",
+      "email": "eminmm@mm.com",
+      "phone": "324234",
+      "country": "asdasd",
+      "state": "AZ",
+      "city": "Baku",
+      "address": "8mkr",
+      "card number": "12121212",
+      "CVC": "1212",
+      "month": "12",
+      "day": "12",
+      "product": [
+        {
+          "id": "4",
+          "name": "Galaxy Watch 4",
+          "image": "/products/watch.jpeg",
+          "count": 1,
+          "price": 299.99,
+          "currency": "USD"
+        }
+      ],
+      "totalPrice": "299.99",
+      "user": {
+        "email": "eminmm@mm.com",
+        "username": "eminmm",
+        "confirmPassword": "OperaHero1991",
+        "orders": [
+          {
+            "product": [
+              {
+                "id": "1",
+                "name": "Galaxy S21",
+                "image": "/products/s21.png",
+                "count": 3,
+                "price": 799.99,
+                "currency": "USD"
+              }
+            ],
+            "price": "2399.97"
+          },
+          {
+            "product": [
+              {
+                "id": "3",
+                "name": "AirPods Pro Wireless",
+                "image": "/products/airpod.png",
+                "count": 1,
+                "price": 249.99,
+                "currency": "USD"
+              }
+            ],
+            "price": "249.99"
+          },
+          {
+            "product": [
+              {
+                "id": "2",
+                "name": "MacBook Air",
+                "image": "/products/mac.png",
+                "count": 1,
+                "price": 999.99,
+                "currency": "USD"
+              }
+            ],
+            "price": "999.99"
+          }
+        ],
+        "id": 1,
+        "date": "2024-05-30T01:22:14.447Z"
+      },
+      "date": "2024-05-30T01:25:52.137Z",
+      "id": 7
+    },
+    {
+      "name": "Emin",
+      "email": "eminmm@mm.com",
+      "phone": "12",
+      "country": "12",
+      "state": "12",
+      "city": "12",
+      "address": "12",
+      "card number": "12",
+      "CVC": "12",
+      "month": "12",
+      "day": "12",
+      "product": [
+        {
+          "id": "9",
+          "name": "Fitbit Charge 5",
+          "image": "/products/fitbit.jpg",
+          "count": 2,
+          "price": 149.99,
+          "currency": "USD"
+        }
+      ],
+      "totalPrice": "299.98",
+      "user": {
+        "email": "eminmm@mm.com",
+        "username": "eminmm",
+        "confirmPassword": "OperaHero1991",
+        "orders": [
+          {
+            "product": [
+              {
+                "id": "1",
+                "name": "Galaxy S21",
+                "image": "/products/s21.png",
+                "count": 3,
+                "price": 799.99,
+                "currency": "USD"
+              }
+            ],
+            "price": "2399.97"
+          },
+          {
+            "product": [
+              {
+                "id": "3",
+                "name": "AirPods Pro Wireless",
+                "image": "/products/airpod.png",
+                "count": 1,
+                "price": 249.99,
+                "currency": "USD"
+              }
+            ],
+            "price": "249.99"
+          },
+          {
+            "product": [
+              {
+                "id": "2",
+                "name": "MacBook Air",
+                "image": "/products/mac.png",
+                "count": 1,
+                "price": 999.99,
+                "currency": "USD"
+              }
+            ],
+            "price": "999.99"
+          }
+        ],
+        "id": 1,
+        "date": "2024-05-30T01:22:14.447Z"
+      },
+      "date": "2024-05-30T01:28:03.871Z",
+      "id": 8
+    },
+    {
+      "name": "Emin",
+      "email": "eminmm@mm.com",
+      "phone": "121212",
+      "country": "12",
+      "state": "1212",
+      "city": "12",
+      "address": "12",
+      "card number": "1212",
+      "CVC": "12",
+      "month": "12",
+      "day": "12",
+      "product": [
+        {
+          "id": "4",
+          "name": "Galaxy Watch 4",
+          "image": "/products/watch.jpeg",
+          "count": 1,
+          "price": 299.99,
+          "currency": "USD"
+        },
+        {
+          "id": "20",
+          "name": "Huawei Watch GT 2",
+          "image": "/products/huawei.webp",
+          "count": 1,
+          "price": 179.99,
+          "currency": "USD"
+        },
+        {
+          "id": "7",
+          "name": "iPad Pro 12.9",
+          "image": "/products/ipad12.jpg",
+          "count": 1,
+          "price": 1099.99,
+          "currency": "USD"
+        }
+      ],
+      "totalPrice": "1500.97",
+      "user": {
+        "email": "eminmm@mm.com",
+        "username": "eminmm",
+        "confirmPassword": "OperaHero1991",
+        "orders": [
+          {
+            "product": [
+              {
+                "id": "1",
+                "name": "Galaxy S21",
+                "image": "/products/s21.png",
+                "count": 3,
+                "price": 799.99,
+                "currency": "USD"
+              }
+            ],
+            "price": "2399.97"
+          },
+          {
+            "product": [
+              {
+                "id": "3",
+                "name": "AirPods Pro Wireless",
+                "image": "/products/airpod.png",
+                "count": 1,
+                "price": 249.99,
+                "currency": "USD"
+              }
+            ],
+            "price": "249.99"
+          },
+          {
+            "product": [
+              {
+                "id": "2",
+                "name": "MacBook Air",
+                "image": "/products/mac.png",
+                "count": 1,
+                "price": 999.99,
+                "currency": "USD"
+              }
+            ],
+            "price": "999.99"
+          },
+          {
+            "product": [
+              {
+                "id": "9",
+                "name": "Fitbit Charge 5",
+                "image": "/products/fitbit.jpg",
+                "count": 2,
+                "price": 149.99,
+                "currency": "USD"
+              }
+            ],
+            "price": "299.98"
+          }
+        ],
+        "id": 1,
+        "date": "2024-05-30T01:28:03.895Z"
+      },
+      "date": "2024-05-30T01:29:51.401Z",
+      "id": 9
+    },
+    {
+      "name": "Emin",
+      "email": "eminmm@mm.com",
+      "phone": "1212",
+      "country": "12",
+      "state": "12",
+      "city": "12",
+      "address": "12",
+      "card number": "12",
+      "CVC": "12",
+      "month": "12",
+      "day": "12",
+      "product": [
+        {
+          "id": "29",
+          "name": "Dell XPS 13",
+          "image": "/products/dellxps.JPG",
+          "count": 3,
+          "price": 1199.99,
+          "currency": "USD"
+        }
+      ],
+      "totalPrice": "3599.97",
+      "user": {
+        "email": "eminmm@mm.com",
+        "username": "eminmm",
+        "confirmPassword": "OperaHero1991",
+        "orders": [
+          {
+            "product": [
+              {
+                "id": "1",
+                "name": "Galaxy S21",
+                "image": "/products/s21.png",
+                "count": 3,
+                "price": 799.99,
+                "currency": "USD"
+              }
+            ],
+            "price": "2399.97"
+          },
+          {
+            "product": [
+              {
+                "id": "3",
+                "name": "AirPods Pro Wireless",
+                "image": "/products/airpod.png",
+                "count": 1,
+                "price": 249.99,
+                "currency": "USD"
+              }
+            ],
+            "price": "249.99"
+          },
+          {
+            "product": [
+              {
+                "id": "2",
+                "name": "MacBook Air",
+                "image": "/products/mac.png",
+                "count": 1,
+                "price": 999.99,
+                "currency": "USD"
+              }
+            ],
+            "price": "999.99"
+          },
+          {
+            "product": [
+              {
+                "id": "9",
+                "name": "Fitbit Charge 5",
+                "image": "/products/fitbit.jpg",
+                "count": 2,
+                "price": 149.99,
+                "currency": "USD"
+              }
+            ],
+            "price": "299.98"
+          }
+        ],
+        "id": 1,
+        "date": "2024-05-30T01:28:03.895Z"
+      },
+      "date": "2024-05-30T01:31:01.282Z",
+      "id": 10
+    }
+  ]
+}

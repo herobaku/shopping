@@ -1,0 +1,11 @@
+.services__card {
+  @apply relative px-6 mb-[30px] text-center
+}
+
+.services__card::after {
+  @apply md:content-[''] md:absolute md:right-0 md:top-3 md:w-[1px] md:h-full md:bg-[#ddd];
+}
+
+.services__card:nth-child(3):after {
+  @apply md:h-0
+}
