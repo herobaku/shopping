@@ -31,7 +31,7 @@ const ShoppingCart = () => {
           </div>
         </div>
       </div>
-      {cart.length ? (
+      {cart && cart.length ? (
         <section className="py-10 px-7">
           <div className="max-w-screen-xl mx-auto">
             <div className="container mx-auto">

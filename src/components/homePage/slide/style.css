@@ -1,3 +1,4 @@
+/* Icon Box */
 .swiper-pagination-bullet {
   width: 18px;
   height: 18px;
@@ -26,3 +27,6 @@
 .swiper-pagination-bullet-active::after {
   background: #FF324D;
 }
+
+/* End */
+

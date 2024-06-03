@@ -1,0 +1,12 @@
+{
+  "navigation": {
+    "home": "Ana Səhifə",
+    "shop": "Məhsullar",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contact": "Əlaqə"
+  },
+  "placeholder": {
+    "name": "Məhsulları axtar..."
+  }
+}

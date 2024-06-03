@@ -5,8 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "./style.css";
 import { Link } from "react-router-dom";
-{
-}
+
 const slider = [
   {
     bg: "/slider/1.jpg",
@@ -56,26 +55,26 @@ const Slide = () => {
                 {slider.map((slide, index) => {
                   return (
                     <SwiperSlide
-                      className="xl:h-[500px] lg:h-[400px] md:h-[500px]"
+                      className="xl:h-[500px] h-56 lg:h-[400px] md:h-[500px]"
                       style={{
                         background: `url(${slide.bg}) center top/cover no-repeat`,
                       }}
                       key={index}
                     >
-                      <div className="flex h-full flex-col  items-start ps-12 justify-center">
+                      <div className="flex h-full gap-y-3 md:gap-y-0 flex-col items-start ps-12 justify-center">
                         <h2
-                          className={`text-xl font-poppins font-light text-${slide.color}`}
+                          className={`md:text-xl text-lg font-poppins font-light text-${slide.color}`}
                         >
                           {slide.stock}
                         </h2>
                         <h1
-                          className={`text-6xl font-poppins capitalize font-semibold mb-5 mt-5 text-${slide.color}`}
+                          className={`md:text-6xl text-2xl font-poppins capitalize font-semibold md:mb-5 md:mt-5 text-${slide.color}`}
                         >
                           {slide.name}
                         </h1>
                         <Link
                           to={slide.href}
-                          className="text-base font-poppins py-[12px] px-[35px] bg-red-500 uppercase text-white"
+                          className="text-base font-poppins p-2 md:py-[12px] md:px-[35px] bg-redLight uppercase text-white"
                         >
                           {slide.button}
                         </Link>

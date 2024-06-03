@@ -1,22 +1,24 @@
 import React, { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { TfiMobile } from "react-icons/tfi";
-import { TbSwitch3 } from "react-icons/tb";
 import { LuUser2 } from "react-icons/lu";
 import { GrLanguage } from "react-icons/gr";
 import { Link } from "react-router-dom";
 import { useRegisterContext } from "../../../context/Context";
+import { useTranslation } from "react-i18next";
 
 const Top = () => {
-  const [language, setLanguage] = useState("English");
-  const [currency, setCurrency] = useState("USD");
+  const { t, i18n } = useTranslation();
+  const { user } = useRegisterContext();
+  const { logOut } = useRegisterContext();
+  const [language, setLanguage] = useState(i18n.language);
   const [languageDropdownVisible, setLanguageDropdownVisible] = useState(false);
+  const [currency, setCurrency] = useState("USD");
   const [currencyDropdownVisible, setCurrencyDropdownVisible] = useState(false);
 
-  const availableLanguages = ["English", "Azerbaijani"];
+  const availableLanguages = ["English", "Azerbaijan"];
   const availableCurrencies = ["USD", "AZN"];
 
-  const { user } = useRegisterContext();
   // Currency
   const toggleLanguageDropdown = () => {
     setLanguageDropdownVisible((prevVisible) => !prevVisible);
@@ -34,15 +36,19 @@ const Top = () => {
     setLanguageDropdownVisible(false);
   };
 
-  const selectLanguage = (selectedLanguage) => {
-    setLanguage(selectedLanguage);
+  const selectLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+    setLanguage(lang);
     setLanguageDropdownVisible(false);
+    localStorage.setItem("language", lang);
   };
 
-  const { logOut } = useRegisterContext();
-
-  // Save state
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const saveLang = localStorage.getItem("language");
+    if (saveLang) {
+      i18n.changeLanguage(saveLang);
+    }
+  }, [i18n]);
 
   return (
     <div className="border-b border-[#eee] hidden md:block">

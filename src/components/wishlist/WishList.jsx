@@ -77,7 +77,17 @@ const WishList = () => {
           </div>
         </section>
       ) : (
-        "s"
+        <section className="py-10 px-2">
+          <div className="max-w-screen-xl mx-auto">
+            <div className="container mx-auto">
+              <div className="flex justify-center items-center">
+                <h3 className="center block capitalize">
+                  No product in wishlist!
+                </h3>
+              </div>
+            </div>
+          </div>
+        </section>
       )}
     </>
   );

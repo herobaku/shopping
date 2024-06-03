@@ -16,7 +16,7 @@ const ShopDetails = () => {
   const [features, setFeatures] = useState({});
   const [image, setImage] = useState({});
   const { products } = useProductsContext();
-  const { addCart, addToFavorites } = useRegisterContext();
+  const { addCart, addToFavorites, user } = useRegisterContext();
   const [count, setCount] = useState(1);
   const countMinus = () => {
     setCount(count > 1 ? count - 1 : count);
@@ -50,6 +50,7 @@ const ShopDetails = () => {
     { href: "/", label: "Home" },
     { href: "/", label: "ProductDetails" },
   ];
+
 
   return (
     <>
@@ -140,11 +141,12 @@ const ShopDetails = () => {
                   </div>
 
                   <div className="flex gap-x-4 items-center">
-                    <button
+                    <Link
                       className="bg-redLight flex items-center gap-x-3 text-white py-3.5 px-7 rounded-md"
-                      to="#"
-                      disabled={!product.stock}
+                      to={user ? "#" : "/register"}
+                      disabled={!product.stock && !user}
                       onClick={() =>
+                        user &&
                         addCart({
                           id: product.id,
                           name: product.name,
@@ -159,24 +161,14 @@ const ShopDetails = () => {
                         <MdOutlineLocalGroceryStore />
                       </span>
                       <span>Add to cart</span>
-                    </button>
-                    {/* {product.stock ? (
-                      <Link
-                        className="bg-[#343a40] text-white py-3.5 px-7 rounded-md"
-                        to="#"
-                      >
-                        Quick buy
-                      </Link>
-                    ) : (
-                      ""
-                    )} */}
+                    </Link>
                     <button
                       className=""
                       onClick={() =>
                         addToFavorites({
                           id: product.id,
                           name: product.name,
-                          image: image,
+                          image: image.main,
                           price: product.price,
                           currency: product.currency,
                         })

@@ -1,0 +1,12 @@
+{
+  "navigation": {
+    "home": "Home",
+    "shop": "Shop",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "placeholder": {
+    "name": "Search Product..."
+  }
+}

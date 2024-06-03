@@ -7,6 +7,7 @@ import { IoIosSearch } from "react-icons/io";
 import Breadcrumbs from "../../../breadcumbs/Breadcumbs";
 
 const categories = ["Ecommerce", "Fashion", "Electronic", "Commercial"];
+
 const posts = [
   {
     title: "4 Expert Tips On How To Choose The Right Men’s Wallet",
