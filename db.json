@@ -872,15 +872,8 @@
         "https://example.com/images/blog_2.jpg",
         "https://example.com/images/blog_3.jpg"
       ],
-      "tags": [
-        "tag1",
-        "tag2",
-        "tag3"
-      ],
-      "category": [
-        "electronic",
-        "ecommerce"
-      ],
+      "tags": ["tag1", "tag2", "tag3"],
+      "category": ["electronic", "ecommerce"],
       "author": {
         "name": "John Doe",
         "bio": "John Doe is a tech enthusiast and freelance writer passionate about exploring the latest trends in electronic commerce."
@@ -898,15 +891,8 @@
         "https://example.com/images/blog_2_2.jpg",
         "https://example.com/images/blog_2_3.jpg"
       ],
-      "tags": [
-        "AI",
-        "e-commerce",
-        "technology"
-      ],
-      "category": [
-        "technology",
-        "ecommerce"
-      ],
+      "tags": ["AI", "e-commerce", "technology"],
+      "category": ["technology", "ecommerce"],
       "author": {
         "name": "Emily Smith",
         "bio": "Emily Smith is a technology writer specializing in artificial intelligence and its applications in various industries."
@@ -924,14 +910,8 @@
         "https://example.com/images/blog_3_2.jpg",
         "https://example.com/images/blog_3_3.jpg"
       ],
-      "tags": [
-        "gadgets",
-        "technology",
-        "smart devices"
-      ],
-      "category": [
-        "technology"
-      ],
+      "tags": ["gadgets", "technology", "smart devices"],
+      "category": ["technology"],
       "author": {
         "name": "Mark Johnson",
         "bio": "Mark Johnson is a technology blogger who loves exploring and reviewing the latest gadgets on the market."
@@ -949,16 +929,8 @@
         "https://example.com/images/blog_4_2.jpg",
         "https://example.com/images/blog_4_3.jpg"
       ],
-      "tags": [
-        "online retail",
-        "future trends",
-        "AR",
-        "sustainability"
-      ],
-      "category": [
-        "ecommerce",
-        "technology"
-      ],
+      "tags": ["online retail", "future trends", "AR", "sustainability"],
+      "category": ["ecommerce", "technology"],
       "author": {
         "name": "Sophia Brown",
         "bio": "Sophia Brown is an e-commerce strategist and futurist, passionate about envisioning the future of retail."
@@ -976,15 +948,8 @@
         "https://example.com/images/blog_5_2.jpg",
         "https://example.com/images/blog_5_3.jpg"
       ],
-      "tags": [
-        "digital marketing",
-        "e-commerce",
-        "branding"
-      ],
-      "category": [
-        "ecommerce",
-        "marketing"
-      ],
+      "tags": ["digital marketing", "e-commerce", "branding"],
+      "category": ["ecommerce", "marketing"],
       "author": {
         "name": "Michael Lee",
         "bio": "Michael Lee is a digital marketing expert with a focus on helping e-commerce businesses thrive in the online marketplace."
@@ -1002,15 +967,8 @@
         "https://example.com/images/blog_6_2.jpg",
         "https://example.com/images/blog_6_3.jpg"
       ],
-      "tags": [
-        "social commerce",
-        "social media",
-        "sales strategies"
-      ],
-      "category": [
-        "ecommerce",
-        "marketing"
-      ],
+      "tags": ["social commerce", "social media", "sales strategies"],
+      "category": ["ecommerce", "marketing"],
       "author": {
         "name": "Jessica Taylor",
         "bio": "Jessica Taylor is a social media strategist specializing in helping businesses leverage social platforms for sales and brand growth."

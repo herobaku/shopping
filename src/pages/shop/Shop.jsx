@@ -1,8 +1,8 @@
-import { useParams } from "react-router-dom";
+import { useParams, useLocation, useNavigate } from "react-router-dom";
 import Breadcrumbs from "@components/breadcumbs/Breadcumbs";
 import Select from "@components/productsPage/content/select/Select";
 import Shower from "@components/productsPage/content/shower/Shower";
-import ViewLong from "@components/productsPage/content/view_long/View";
+// import ViewLong from "@components/productsPage/content/view_long/View";
 import ViewShort from "@components/productsPage/content/view_short/View";
 import Brand from "@components/productsPage/shop/brand/Brand";
 import Category from "@components/productsPage/shop/category/Category";
@@ -21,6 +21,8 @@ const crumbs = [
 
 const Shop = () => {
   const { category } = useParams();
+  const location = useLocation();
+  const navigate = useNavigate();
   const { products } = useProductsContext();
   const [viewMode, setViewMode] = useState(true);
   const [sortOption, setSortOption] = useState("default");
@@ -29,8 +31,11 @@ const Shop = () => {
   const [selectedBrands, setSelectedBrands] = useState([]);
   const [filteredBrands, setFilteredBrands] = useState([]);
   const [priceRange, setPriceRange] = useState({ min: "", max: "" });
-  const [currentPage, setCurrentPage] = useState(1); // Current page
-  const [productsPerPage, setProductsPerPage] = useState(9); // Products per page
+  const [currentPage, setCurrentPage] = useState(1);
+  const [productsPerPage, setProductsPerPage] = useState(9);
+
+  const searchParams = new URLSearchParams(location.search);
+  const searchQuery = searchParams.get("search");
 
   const toggleViewMode = (mode) => {
     setViewMode(mode);
@@ -59,6 +64,12 @@ const Shop = () => {
           const max = priceRange.max ? parseFloat(priceRange.max) : Infinity;
           return price >= min && price <= max;
         });
+      }
+
+      if (searchQuery) {
+        filtered = filtered.filter((product) =>
+          product.name.toLowerCase().includes(searchQuery.toLowerCase())
+        );
       }
 
       return filtered;
@@ -104,11 +115,19 @@ const Shop = () => {
     const filteredProducts = filterProducts();
     sortProducts(filteredProducts);
     updateFilteredBrands();
-  }, [products, sortOption, selectedCategory, selectedBrands, priceRange]);
+  }, [
+    products,
+    sortOption,
+    selectedCategory,
+    selectedBrands,
+    priceRange,
+    searchQuery,
+  ]);
 
   const handleCategorySelect = (category) => {
     setSelectedCategory(category);
     setSelectedBrands([]);
+    navigate("/shop");
   };
 
   const handleBrandSelect = (brand) => {
@@ -126,6 +145,10 @@ const Shop = () => {
   const handleProductsPerPageChange = (number) => {
     setProductsPerPage(number);
     setCurrentPage(1);
+  };
+
+  const handleShowAll = () => {
+    navigate("/shop");
   };
 
   // Pagination
@@ -169,6 +192,12 @@ const Shop = () => {
                     selectedBrands={selectedBrands}
                   />
                   <Price onPriceChange={handlePriceChange} />
+                  <button
+                    onClick={handleShowAll}
+                    className="mt-4 bg-blue-500 text-white p-2 rounded"
+                  >
+                    Show All
+                  </button>
                 </div>
                 <div className="lg:w-9/12 w-full lg:order-2 order-1">
                   <div className="product-header mb-6">

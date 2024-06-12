@@ -8,7 +8,6 @@ import Shop from "../pages/shop/Shop";
 import Post from "@components/blogPage/posts/post/Post";
 import ShopDetail from "@components/productsPage/shopDetail/ShopDetail";
 import WishList from "@components/wishlist/WishList";
-import Compare from "@components/compare/Compare";
 import Login from "../pages/login/Login";
 import Register from "../pages/register/Register";
 import ShoppingCart from "../pages/shoppingCart/ShoppingCart";
@@ -29,7 +28,6 @@ const RouterMain = () => {
       <Route path="/wishlist" element={<WishList />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
-      <Route path="/compare" element={<Compare />} />
       <Route path="/cart" element={<ShoppingCart />} />
       <Route path="/checkout" element={<Checkout />} />
       <Route path="/admin" element={<Dashboard />} />

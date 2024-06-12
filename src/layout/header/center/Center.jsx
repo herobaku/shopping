@@ -1,14 +1,22 @@
-// Logo
 import { useTranslation } from "react-i18next";
 import logoNew from "/logoNew.png";
-// Icons
 import { FiPhoneCall } from "react-icons/fi";
 import { IoIosSearch } from "react-icons/io";
-
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 const Center = () => {
   const { t } = useTranslation();
+  const [searchQuery, setSearchQuery] = useState("");
+  const navigate = useNavigate();
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      navigate(`/shop?search=${searchQuery}`);
+      setSearchQuery("");
+    }
+  };
 
   return (
     <div className="max-w-screen-xl mx-auto">
@@ -20,13 +28,15 @@ const Center = () => {
             </Link>
           </div>
           <div className="w-6/12 hidden lg:block">
-            <form className="flex">
+            <form className="flex" onSubmit={handleSearchSubmit}>
               <div className="input-block w-full border flex space-x-5">
                 <div className="input-field w-full relative border-1">
                   <input
                     type="text"
                     placeholder={t("placeholder.name")}
                     className="w-full h-full p-3 outline-0 pe-12"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
                   />
                   <button
                     type="submit"
