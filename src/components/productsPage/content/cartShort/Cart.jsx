@@ -5,12 +5,15 @@ import { useRegisterContext } from "../../../../context/Context";
 
 const Cart = ({ id, images, name, price, brand }) => {
   const { addCart, addToFavorites, user } = useRegisterContext();
-
   const navigate = useNavigate();
 
-  const handleClick = () => {
+  const handleClick = (action) => {
     if (user) {
-      AddToCart();
+      if (action === "cart") {
+        AddToCart();
+      } else if (action === "favorites") {
+        AddToFavorites();
+      }
     } else {
       navigate("/register");
     }
@@ -23,18 +26,18 @@ const Cart = ({ id, images, name, price, brand }) => {
       price,
       brand,
       count: 1,
-      images: images.main,
+      image: images.main,
     };
     addCart(product);
   };
 
-  const addFavorites = () => {
+  const AddToFavorites = () => {
     const product = {
       id,
       name,
       price,
       brand,
-      images: images.main,
+      image: images.main,
     };
     addToFavorites(product);
   };
@@ -49,10 +52,10 @@ const Cart = ({ id, images, name, price, brand }) => {
         />
         <div className="absolute inset-5 flex items-center justify-center opacity-0 group-hover:opacity-100 duration-500 transition-all">
           <div className="space-x-2 bg-white p-2 rounded flex">
-            <button className="p-2" onClick={handleClick}>
+            <button className="p-2" onClick={() => handleClick("cart")}>
               <MdOutlineLocalGroceryStore className="h-5 w-5 text-gray-800" />
             </button>
-            <button className="p-2" onClick={addFavorites}>
+            <button className="p-2" onClick={() => handleClick("favorites")}>
               <AiOutlineHeart className="h-5 w-5 text-gray-800" />
             </button>
           </div>

@@ -11,6 +11,18 @@ const crumbs = [
 const WishList = () => {
   const { favorites, removeFav, addCart } = useRegisterContext();
 
+  const AddToCart = (item) => {
+    const product = {
+      id: item.id,
+      name: item.name,
+      price: item.price,
+      brand: item.brand,
+      count: 1,
+      image: item.image,
+    };
+    addCart(product);
+  };
+
   return (
     <>
       <div className="bg-[#f7f8fb]">
@@ -43,7 +55,7 @@ const WishList = () => {
                       <tr className="border-t" key={item.id}>
                         <td className="h-[50px] w-[50px] ps-16">
                           <img
-                            src={item.images}
+                            src={item.image} // Ensure this line is correct
                             alt={item.name}
                             className="w-full h-full"
                           />
@@ -53,12 +65,12 @@ const WishList = () => {
                         </td>
                         <td>{item.price}</td>
                         <td className="py-5">
-                          <Link
-                            to={() => addCart(item.id)}
+                          <button
+                            onClick={() => AddToCart(item)}
                             className="capitalize px-5 py-3 bg-redLight rounded-md text-white hover:opacity-0.5"
                           >
                             add to cart
-                          </Link>
+                          </button>
                         </td>
                         <td className="py-5">
                           <button

@@ -18,6 +18,7 @@ const ShopDetails = () => {
   const { products } = useProductsContext();
   const { addCart, addToFavorites, user } = useRegisterContext();
   const [count, setCount] = useState(1);
+
   const countMinus = () => {
     setCount(count > 1 ? count - 1 : count);
   };
@@ -50,7 +51,6 @@ const ShopDetails = () => {
     { href: "/", label: "Home" },
     { href: "/", label: "ProductDetails" },
   ];
-
 
   return (
     <>
@@ -168,7 +168,7 @@ const ShopDetails = () => {
                         addToFavorites({
                           id: product.id,
                           name: product.name,
-                          image: image.main,
+                          image: image,
                           price: product.price,
                           currency: product.currency,
                         })

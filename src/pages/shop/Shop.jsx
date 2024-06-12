@@ -2,7 +2,7 @@ import { useParams, useLocation, useNavigate } from "react-router-dom";
 import Breadcrumbs from "@components/breadcumbs/Breadcumbs";
 import Select from "@components/productsPage/content/select/Select";
 import Shower from "@components/productsPage/content/shower/Shower";
-// import ViewLong from "@components/productsPage/content/view_long/View";
+import ViewLong from "@components/productsPage/content/view_long/View";
 import ViewShort from "@components/productsPage/content/view_short/View";
 import Brand from "@components/productsPage/shop/brand/Brand";
 import Category from "@components/productsPage/shop/category/Category";
@@ -210,7 +210,7 @@ const Shop = () => {
                       </div>
                       <div className="flex items-center gap-x-3">
                         <ViewShort onClick={() => toggleViewMode(true)} />
-                        {/* <ViewLong onClick={() => toggleViewMode(false)} /> */}
+                        <ViewLong onClick={() => toggleViewMode(false)} />
                         <Shower
                           onProductsPerPageChange={handleProductsPerPageChange}
                         />
