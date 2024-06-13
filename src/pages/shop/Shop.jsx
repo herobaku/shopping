@@ -6,7 +6,6 @@ import Brand from "@components/productsPage/shop/brand/Brand";
 import Category from "@components/productsPage/shop/category/Category";
 import Price from "@components/productsPage/shop/price/Price";
 import CartShort from "@components/productsPage/content/cartShort/Cart";
-import CartLonger from "@components/productsPage/content/cartLong/Cart";
 // Context
 import { useProductsContext } from "../../context/Context";
 import { useState, useEffect } from "react";
@@ -22,7 +21,6 @@ const Shop = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const { products } = useProductsContext();
-  const [viewMode, setViewMode] = useState(true);
   const [sortOption, setSortOption] = useState("default");
   const [sortedProducts, setSortedProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(category || "All");
@@ -213,19 +211,11 @@ const Shop = () => {
                       </div>
                     </div>
                   </div>
-                  {viewMode ? (
-                    <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-                      {currentProducts.map((product) => (
-                        <CartShort key={product.id} {...product} />
-                      ))}
-                    </div>
-                  ) : (
-                    <div className="flex flex-col gap-y-5">
-                      {currentProducts.map((product) => (
-                        <CartLonger key={product.id} {...product} />
-                      ))}
-                    </div>
-                  )}
+                  <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+                    {currentProducts.map((product) => (
+                      <CartShort key={product.id} {...product} />
+                    ))}
+                  </div>
                   <Pagination
                     productsPerPage={productsPerPage}
                     totalProducts={sortedProducts.length}

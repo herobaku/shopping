@@ -23,12 +23,23 @@ const ShopDetails = () => {
     setCount(count > 1 ? count - 1 : count);
   };
 
-  const countPlus = () => {
-    setCount(count + 1);
+  const countChange = (e) => {
+    const value = parseInt(e.target.value);
+
+    if (!isNaN(value) && value >= 1 && value <= product.stock) {
+      setCount(value);
+    } else if (isNaN(value) || value < 1) {
+      setCount(1);
+    } else {
+      setCount(product.stock);
+    }
   };
 
-  const countChange = (e) => {
-    setCount(e.target.value);
+  const countPlus = () => {
+    setCount((prevCount) => {
+      const newCount = prevCount + 1;
+      return newCount <= product.stock ? newCount : prevCount;
+    });
   };
 
   useEffect(() => {
