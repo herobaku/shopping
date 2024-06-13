@@ -3,6 +3,7 @@ import { useRegisterContext } from "../../context/Context";
 import { useNavigate } from "react-router";
 import { useForm } from "react-hook-form";
 import axios from "axios";
+import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Checkout = () => {
@@ -13,53 +14,47 @@ const Checkout = () => {
 
   const orderProduct = async (data) => {
     // Axios melumati gonderir orderse
-    await axios
-      .post("http://localhost:8080/orders", {
-        ...data,
-        product: cart,
-        totalPrice: ticket.length
-          ? (
-              cart.reduce((acc, rec) => acc + rec.count * rec.price, 0) -
-              (cart.reduce((acc, rec) => acc + rec.count * rec.price, 0) /
-                100) *
-                ticket[0].sum
-            ).toFixed(2)
-          : cart
-              .reduce((acc, rec) => acc + rec.count * rec.price, 0)
-              .toFixed(2),
-        user: user,
-        date: new Date(),
-      })
-      .then(() => console.log("Done"));
+    await axios.post("http://localhost:8080/orders", {
+      ...data,
+      product: cart,
+      totalPrice: ticket.length
+        ? (
+            cart.reduce((acc, rec) => acc + rec.count * rec.price, 0) -
+            (cart.reduce((acc, rec) => acc + rec.count * rec.price, 0) / 100) *
+              ticket[0].sum
+          ).toFixed(2)
+        : cart.reduce((acc, rec) => acc + rec.count * rec.price, 0).toFixed(2),
+      user: user,
+      date: new Date(),
+    });
 
     // Axios melumati gonderir userin daxiline
 
-    await axios
-      .patch(`http://localhost:8080/users/${user.id}`, {
-        orders: [
-          ...user.orders,
-          {
-            product: cart,
-            price: ticket.length
-              ? (
-                  cart.reduce((acc, rec) => acc + rec.count * rec.price, 0) -
-                  (cart.reduce((acc, rec) => acc + rec.count * rec.price, 0) /
-                    100) *
-                    ticket[0].sum
-                ).toFixed(2)
-              : cart
-                  .reduce((acc, rec) => acc + rec.count * rec.price, 0)
-                  .toFixed(2),
-          },
-        ],
-        date: new Date(),
-      })
-      .then(() => console.log("Done"));
+    await axios.patch(`http://localhost:8080/users/${user.id}`, {
+      orders: [
+        ...user.orders,
+        {
+          product: cart,
+          price: ticket.length
+            ? (
+                cart.reduce((acc, rec) => acc + rec.count * rec.price, 0) -
+                (cart.reduce((acc, rec) => acc + rec.count * rec.price, 0) /
+                  100) *
+                  ticket[0].sum
+              ).toFixed(2)
+            : cart
+                .reduce((acc, rec) => acc + rec.count * rec.price, 0)
+                .toFixed(2),
+        },
+      ],
+      date: new Date(),
+    });
 
     // Axios melumati gonderden sonra userin orderine yeniliyir
     await axios(`http://localhost:8080/users/${user.id}`).then((res) =>
       setUser(res.data)
     );
+    toast.error("Order placed successfully!");
 
     reset();
     setCart([]);
@@ -70,6 +65,7 @@ const Checkout = () => {
 
   return (
     <>
+      <ToastContainer />
       <div className="max-w-screen-xl mx-auto">
         <div className="container mx-auto">
           <div className="px-6 py-10">
@@ -95,13 +91,13 @@ const Checkout = () => {
                       type="text"
                       className="w-2/3 h-full py-3 px-3 border rounded-lg focus:shadow-md outline-0 duration-150"
                       placeholder="Email"
-                      {...register("email")}
+                      {...register("email", { required: true })}
                     />
                     <input
                       type="number"
                       className="w-2/3 h-full py-3 px-3 border rounded-lg focus:shadow-md outline-0 duration-150"
                       placeholder="Phone"
-                      {...register("phone")}
+                      {...register("phone", { required: true })}
                     />
                   </div>
                   <div>
@@ -109,7 +105,7 @@ const Checkout = () => {
                       type="text"
                       className="w-full h-full py-3 px-3 border rounded-lg focus:shadow-md outline-0 duration-150"
                       placeholder="Country"
-                      {...register("country")}
+                      {...register("country", { required: true })}
                     />
                   </div>
                   <div className="flex gap-x-3">
@@ -117,13 +113,13 @@ const Checkout = () => {
                       type="text"
                       className="w-1/2 h-full py-3 px-3 border rounded-lg focus:shadow-md outline-0 duration-150"
                       placeholder="State"
-                      {...register("state")}
+                      {...register("state", { required: true })}
                     />
                     <input
                       type="text"
                       className="w-1/2 h-full py-3 px-3 border rounded-lg focus:shadow-md outline-0 duration-150"
                       placeholder="City"
-                      {...register("city")}
+                      {...register("city", { required: true })}
                     />
                   </div>
                   <div>
@@ -131,7 +127,7 @@ const Checkout = () => {
                       type="text"
                       className="w-full h-full py-3 px-3 border rounded-lg focus:shadow-md outline-0 duration-150"
                       placeholder="Address"
-                      {...register("address")}
+                      {...register("address", { required: true })}
                     />
                   </div>
 
@@ -143,7 +139,7 @@ const Checkout = () => {
                           type="number"
                           placeholder="Card Number"
                           className="w-full h-full py-3 px-3 border rounded-lg focus:shadow-md outline-0 duration-150"
-                          {...register("card number")}
+                          {...register("card number", { required: true })}
                         />
                       </div>
                       <div className="flex gap-x-3">
@@ -152,7 +148,7 @@ const Checkout = () => {
                             type="number"
                             className="w-full h-full py-3 px-3 border rounded-lg focus:shadow-md outline-0 duration-150"
                             placeholder="CVC"
-                            {...register("CVC")}
+                            {...register("CVC", { required: true })}
                           />
                         </div>
                         <div className="flex md:w-1/4 gap-x-3">
@@ -160,13 +156,13 @@ const Checkout = () => {
                             type="number"
                             placeholder=""
                             className="w-full h-full py-3 px-3 border rounded-lg focus:shadow-md outline-0 duration-150"
-                            {...register("month")}
+                            {...register("month", { required: true })}
                           />
                           <input
                             type="number"
                             placeholder=""
                             className="w-full h-full py-3 px-3 border rounded-lg focus:shadow-md outline-0 duration-150"
-                            {...register("day")}
+                            {...register("day", { required: true })}
                           />
                         </div>
                       </div>

@@ -49,14 +49,17 @@ const Center = () => {
             </form>
           </div>
           <div className="call w-1/2 lg:w-3/12">
-            <div className="call-link flex items-center space-x-1 justify-end">
+            <Link
+              to="tel:123-456-7890"
+              className="call-link flex items-center space-x-1 justify-end"
+            >
               <span className="text-red-500 text-xl md:text-4xl ">
                 <FiPhoneCall className="stroke-1" />
               </span>
               <span className="lg:text-base text-sm font-poppins">
                 123-456-7890
               </span>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

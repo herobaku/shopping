@@ -11,11 +11,15 @@ const Cart = ({ id, images, name, price, brand }) => {
     if (user) {
       if (action === "cart") {
         AddToCart();
-      } else if (action === "favorites") {
-        AddToFavorites();
       }
     } else {
       navigate("/register");
+    }
+  };
+
+  const addFavorites = (action) => {
+    if (action === "favorites") {
+      AddToFavorites();
     }
   };
 
@@ -55,7 +59,7 @@ const Cart = ({ id, images, name, price, brand }) => {
             <button className="p-2" onClick={() => handleClick("cart")}>
               <MdOutlineLocalGroceryStore className="h-5 w-5 text-gray-800" />
             </button>
-            <button className="p-2" onClick={() => handleClick("favorites")}>
+            <button className="p-2" onClick={() => addFavorites("favorites")}>
               <AiOutlineHeart className="h-5 w-5 text-gray-800" />
             </button>
           </div>

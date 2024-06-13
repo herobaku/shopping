@@ -16,6 +16,7 @@ import { RiMessageLine } from "react-icons/ri";
 import { TfiMobile } from "react-icons/tfi";
 
 import { Link } from "react-router-dom";
+import { useRegisterContext } from "../../context/Context";
 
 const useful__link = [
   {
@@ -23,6 +24,7 @@ const useful__link = [
   },
   {
     name: "FAQ",
+    link: "/faq",
   },
   {
     name: "Location",
@@ -32,39 +34,45 @@ const useful__link = [
   },
   {
     name: "Contact",
+    link: "/contact",
   },
 ];
 
 const categories__link = [
   {
-    name: "Television",
+    name: "Monitors",
+    link: "/shop/Monitors",
   },
   {
     name: "Mobile",
+    link: "/shop/Smartphones",
   },
   {
     name: "Headphone",
+    link: "/shop/Headphones",
   },
   {
     name: "Watches",
+    link: "/shop/Smartwatch",
   },
   {
     name: "Game",
+    link: "/shop/Console",
   },
 ];
 
 const account__link = [
   {
     name: "My profile",
+    link: "/login",
   },
   {
     name: "Wishlist",
+    link: "/wishlist",
   },
   {
     name: "Orders",
-  },
-  {
-    name: "Order tracking",
+    link: "/admin",
   },
 ];
 
@@ -102,6 +110,7 @@ const payment = [
 ];
 
 const Footer = () => {
+  const { user } = useRegisterContext();
   return (
     <footer className="bg-[#202325]">
       <div className="max-w-screen-xl mx-auto">
@@ -110,7 +119,7 @@ const Footer = () => {
             <div className="lg:w-3/12 md:w-6/12 w-full">
               <div className="px-[15px]">
                 <div className="logo w-full">
-                  <Link to="#">
+                  <Link to="/">
                     <img src={logoNew} alt="logo" className="object-cover" />
                   </Link>
                 </div>
@@ -170,7 +179,7 @@ const Footer = () => {
                     return (
                       <li key={index} className="pb-2.5">
                         <Link
-                          to="#"
+                          to={item.link}
                           className="text-white font-poppins text-sm"
                         >
                           {item.name}
@@ -191,7 +200,7 @@ const Footer = () => {
                     return (
                       <li key={index} className="pb-2.5">
                         <Link
-                          to="#"
+                          to={item.link}
                           className="text-white font-poppins text-sm"
                         >
                           {item.name}
@@ -212,7 +221,11 @@ const Footer = () => {
                     return (
                       <li key={index} className="pb-2.5">
                         <Link
-                          to="#"
+                          to={
+                            item.link === "/admin" && user
+                              ? "/admin"
+                              : "/register"
+                          }
                           className="text-white font-poppins text-sm"
                         >
                           {item.name}
@@ -235,8 +248,13 @@ const Footer = () => {
                         key={index}
                         className="pb-2.5 flex space-x-2 items-start justify-start"
                       >
-                        <span className="text-white font-poppins text-lg" >{item.icon}</span>
-                        <Link to="#" className="text-white font-poppins text-sm">
+                        <span className="text-white font-poppins text-lg">
+                          {item.icon}
+                        </span>
+                        <Link
+                          to="#"
+                          className="text-white font-poppins text-sm"
+                        >
                           {item.name}
                         </Link>
                       </li>

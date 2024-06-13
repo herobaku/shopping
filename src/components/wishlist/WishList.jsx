@@ -1,15 +1,15 @@
 import React from "react";
 import Breadcrumbs from "../breadcumbs/Breadcumbs";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useRegisterContext } from "../../context/Context";
 
 const crumbs = [
   { href: "/", label: "Home" },
   { href: "/wishlist", label: "Wishlist" },
 ];
-
 const WishList = () => {
-  const { favorites, removeFav, addCart } = useRegisterContext();
+  const navigate = useNavigate();
+  const { favorites, removeFav, addCart, user } = useRegisterContext();
 
   const AddToCart = (item) => {
     const product = {
@@ -55,7 +55,7 @@ const WishList = () => {
                       <tr className="border-t" key={item.id}>
                         <td className="h-[50px] w-[50px] ps-16">
                           <img
-                            src={item.image} // Ensure this line is correct
+                            src={item.image}
                             alt={item.name}
                             className="w-full h-full"
                           />
@@ -66,7 +66,9 @@ const WishList = () => {
                         <td>{item.price}</td>
                         <td className="py-5">
                           <button
-                            onClick={() => AddToCart(item)}
+                            onClick={() =>
+                              user ? AddToCart(item) : navigate("/register")
+                            }
                             className="capitalize px-5 py-3 bg-redLight rounded-md text-white hover:opacity-0.5"
                           >
                             add to cart

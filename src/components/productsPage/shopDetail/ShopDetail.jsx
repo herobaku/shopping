@@ -142,9 +142,10 @@ const ShopDetails = () => {
 
                   <div className="flex gap-x-4 items-center">
                     <Link
-                      className="bg-redLight flex items-center gap-x-3 text-white py-3.5 px-7 rounded-md"
+                      className={`bg-redLight flex items-center gap-x-3 text-white py-3.5 px-7 rounded-md ${
+                        !product.stock ? "opacity-50 pointer-events-none" : ""
+                      }`}
                       to={user ? "#" : "/register"}
-                      disabled={!product.stock && !user}
                       onClick={() =>
                         user &&
                         addCart({
@@ -156,6 +157,7 @@ const ShopDetails = () => {
                           currency: product.currency,
                         })
                       }
+                      disabled={!product.stock}
                     >
                       <span>
                         <MdOutlineLocalGroceryStore />
