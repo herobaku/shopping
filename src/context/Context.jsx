@@ -8,7 +8,7 @@ const ProductsContext = createContext();
 const RegisterContext = createContext();
 
 const blogUrl = "http://localhost:8080/blog";
-const productsUrl = "http://localhost:8080/products";
+const productsUrl = "https://66559b2c3c1d3b60293a46d7.mockapi.io/products";
 
 const AppProvider = ({ children }) => {
   const [blog, setBlog] = useState([]);
