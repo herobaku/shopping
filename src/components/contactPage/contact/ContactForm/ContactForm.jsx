@@ -29,13 +29,16 @@ const ContactForm = () => {
         })}
         onSubmit={async (values, { setSubmitting, resetForm }) => {
           try {
-            const response = await fetch("http://localhost:8080/contact", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify(values),
-            });
+            const response = await fetch(
+              "https://server-shopping-0czk.onrender.com/contact",
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(values),
+              }
+            );
 
             if (response.ok) {
               toast.success("Message sent successfully");

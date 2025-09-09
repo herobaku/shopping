@@ -43,7 +43,9 @@ const ShopDetails = () => {
   };
 
   useEffect(() => {
-    axios(`http://localhost:8080/products/${params.id}`).then((response) => {
+    axios(
+      `https://server-shopping-0czk.onrender.com/products/${params.id}`
+    ).then((response) => {
       const data = response.data;
       setProduct(data);
       setFeatures(data.features);

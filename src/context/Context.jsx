@@ -7,8 +7,8 @@ const AppContext = createContext();
 const ProductsContext = createContext();
 const RegisterContext = createContext();
 
-const blogUrl = "http://localhost:8080/blog";
-const productsUrl = "http://localhost:8080/products/";
+const blogUrl = "https://server-shopping-0czk.onrender.com/blog";
+const productsUrl = "https://server-shopping-0czk.onrender.com/products/";
 
 const AppProvider = ({ children }) => {
   const [blog, setBlog] = useState([]);
@@ -107,7 +107,9 @@ const AppProvider = ({ children }) => {
   // Register
   const RegisterUser = async (data, navigate) => {
     try {
-      const { data: users } = await axios.get("http://localhost:8080/users");
+      const { data: users } = await axios.get(
+        "https://server-shopping-0czk.onrender.com/users"
+      );
 
       const isUsernameTaken = users.some(
         (user) => user.username === data.username
@@ -124,10 +126,13 @@ const AppProvider = ({ children }) => {
         return;
       }
 
-      const response = await axios.post("http://localhost:8080/users", {
-        ...data,
-        orders: [],
-      });
+      const response = await axios.post(
+        "https://server-shopping-0czk.onrender.com/users",
+        {
+          ...data,
+          orders: [],
+        }
+      );
       localStorage.setItem("user", JSON.stringify(response.data.user));
       setUser(response.data.user);
       toast.success("Registration successful!");
@@ -149,7 +154,10 @@ const AppProvider = ({ children }) => {
 
   const loginUser = async (data, navigate) => {
     try {
-      const response = await axios.post("http://localhost:8080/login", data);
+      const response = await axios.post(
+        "https://server-shopping-0czk.onrender.com/login",
+        data
+      );
       if (response.status === 200) {
         const user = response.data.user;
         localStorage.setItem("user", JSON.stringify(user));

@@ -47,7 +47,7 @@ const Post = () => {
   const [detail, setDetails] = useState({});
 
   useEffect(() => {
-    fetch(`http://localhost:8080/blog/${id}`)
+    fetch(`https://server-shopping-0czk.onrender.com/blog/${id}`)
       .then((res) => res.json())
       .then((data) => setDetails(data));
   }, []);
